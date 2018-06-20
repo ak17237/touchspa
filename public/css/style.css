@@ -1,0 +1,94 @@
+body{background:url(images/background.png); margin: 0; padding: 0; 
+font: 16px/24px Arial,Tahoma, sans-serif;color: #535353} /* Mājaslapas fons,Fonts,ja kāds fonts nav pieejams izmanto nākamo,jeb kādu citu */
+a{text-decoration: none;}
+a:hover {transition: all 0.5s;}
+
+/* Lapas struktūra */
+div.center{width: 1000px; margin: 0 auto;} /*  NAvigācijas centrēšana. margin - lai izveidot brīvu telpu ap elementiem,neskatoties uz definētām robežām */
+div.header{padding-top:20px;background-color: #070b14;} /* Navigācijas fons. padding - radīt vietu ap elementa saturu, iekšpusē jebkuras noteiktas robežas. */
+div.footer {margin: 20px 0 0 150px;}
+
+
+
+/* Mājaslapas headers */
+div.nav{float: right; height: 70px; line-height: 70px;text-transform: uppercase} /* Rindas augstums */
+div.nav a{margin: 0 0 0 74px;padding-top: 30px;color: white; font-weight: bold;position: relative;} /* navigācijas uzrakstu atstarpes un stilizācija */
+div.nav a:hover{color: red;} /* Kad kursors pieskaras uzrakstiem navigācijā */
+
+
+div.akcija{padding: 20px 50px 1px 50px;margin-top: 20px;
+	background: linear-gradient(90deg,#c16a8a 100px, #a367ba 100px, #a367ba 200px, #2b798f 200px,#2b798f 300px,
+		#76a7ac 300px, #76a7ac 400px, #93ae65 400px, #93ae65 500px, #dbb16f 500px) left top repeat-x;
+	background-color: #f2f2f2;
+	background-size: 600px 10px;} /* Akcijas loga formatēšana*/
+	
+div.akcija img{float:left;} /* Bildes pozīcija */
+div.akcija h3{font-size: 24px; font-weight: normal; text-align: center; color: #830000;padding-bottom: 30px;} /* Akcijas teksta formatēšana */
+div.akcija p{text-align: center; padding-bottom: 30px;}
+div.akcija a{font-size: 20px; color: #fff; font-weight: bold;
+	background: #b23600; border: 1px solid #862900; padding: 5px 15px;
+	border-radius: 3px; box-shadow: 2px 2px 7px -1px #777; text-shadow:0px 0px 3px #752300} /* pogas parametri */
+div.akcija a:hover{background: #068bac; border: 1px solid #046d88;text-shadow:0px 0px 3px #752300} /* pogas kursora maiņa */
+div.clear{clear: both;} /* bloka stabilizēšana */
+
+
+
+
+
+/* Navigācija */
+div.navigation{background: #1683a3;border: 1px solid #016c8b; border-left: none; border-right: none;} /* bloka parametri */
+div.navigation ul{margin: 0;padding: 0; list-style: none; text-align: center;} 
+div.navigation ul li {display: inline-block; margin: 5px 100px;} /* teksta formatēšana */
+div.navigation ul li a {color: #fff;text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;}
+div.navigation ul li a:hover {color: #a3e1f3;} /* kursora animācija */
+
+
+
+
+/* Saturs */
+div.background {background: #fff; border: 1px solid #ccc; border-top: none; padding: 40px;} /* Fona parametri */
+div.block{background: #ffffff; width: 920px;} /* bloku izmērs */
+div.paragraph{background: #ffffff; border: 1px solid #ccc; border-radius: 3px; padding: 20px;} /* paragrāfu parametri */
+div.paragraph img{box-shadow: 1px 1px 5px #777;} /* attēlu parametri paragraph blokā */
+div.paragraph h2 {font-size: 30px;margin: 20px 0 10px; color: #01617d;text-align: center;line-height: 20px} /* h2 parametri paragraph blokā */
+div.paragraph p {text-shadow: 0px 0px 0 #fff;line-height: 2;margin-left: 150px;} /* teksta parametri */
+div.paragraph h3 {font-size: 25px;margin: 20px 0 10px; color: #862900;text-align: center;line-height: 20px;opacity: 0.5;} /* h3 parametri */
+div.paragraph table{text-shadow: 1px 1px 0 #fff;text-align: right;width: 100%;} /* tabulas parametri */
+div.paragraph table, td {border-bottom: 1px solid #ddd;}
+.name {width: 9%;text-align:center;} /* pakalpojumu nosaukumu parametri tabulā */
+.name2 {width: 17%;text-align:center;}
+
+
+
+
+
+/* Footer */
+div.GPS {float:left;padding-right: 230px;} /* GPS bloks piespiests pie kreisās malas,lai dodtu watch blokam vietu*/
+div.GPS img {float: left; margin-right: 20px;} /* bilde piespiesta lai dotu tekstam vietu */
+div.GPS p {float: left;} /* tekst piespiest lai pašam būtu vieta */
+div.watch img{float: left;margin-right: 20px;} /* bilde piespiesta lai dotu tekstam vietu */
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 1000px) { /* Mājaslapas adaptēšana ja izšķirtspēja ir mazāka par 1000 px */
+	div.center{width: 95%;}
+	div.block{width: 95%;}
+	div.paragraph img{width: 100%;}
+	div.paragraph h2 {font-size: 25px;}
+	div.paragraph h3 {font-size: 20px;}
+	div.GPS {padding-right: 1px;}
+	div.footer {margin:0 0 0 0;}
+	div.header{text-align:center;}
+	div.nav{float: none;}
+	div.paragraph p {margin-left: 1px;}
+}
+@media screen and (max-width: 684px){
+	div.akcija img{float:none;}
+	div.watch {float:left;margin-left: 15px;}
+	div.footer {margin-left: 150px;}
+}
+@media screen and (max-width: 524px){
+	div.watch img {float: none;}
+}

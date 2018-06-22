@@ -1,11 +1,11 @@
 @extends('welcome')
 @section('home')
 
-<main role="main">    
+<main>    
     <div class="header"> <!-- containeri mājaslapas centrēšanai un darbu ar atsevišķiem apgabaliem -->
         <div class="center">
             <div class="akcija">
-                <img src="images/akcija.jpg" alt="Akcijas bilde" title="Akcijas bilde">
+                <img src="{{ asset('images/akcija.jpg') }}" alt="Akcijas bilde" title="Akcijas bilde">
                 <h3>Klasiskā masāža. Akcija 50% klasiskajam masāžam.</h3>
                 <p><a href="akcija" target="_blank">Skaties šeit!</a></p>
                 <div class="clear"></div>

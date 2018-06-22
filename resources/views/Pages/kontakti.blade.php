@@ -1,7 +1,7 @@
 @extends('pages')
 @section('content')
 
-<main role="main">
+<main>
     <div class="content">
 	<div class="center">
             <div class="background">

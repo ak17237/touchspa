@@ -1,14 +1,14 @@
 @extends('pages')
 @section('content')
 
-<main role="main">
+<main>
     <div class="content">
 	<div class="center">
             <div class="background">
 		<div class="block">
                     <div class="paragraph">
 			<section>
-				<img src="images/pakalpojumi.png" alt="Pakalpojumi">
+				<img src="{{ asset('images/pakalpojumi.png') }}" alt="Pakalpojumi">
                                     <h2>Pakalpojumi</h2>
                                         {{$infos->links()}}
                                         @foreach($infos as $info)

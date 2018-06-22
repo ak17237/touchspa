@@ -12,7 +12,7 @@
 		</nav>
             </div>
                 <a href="/">
-                <img src="images/logo.png" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo --> 
+                <img src="{{ asset('images/logo.png') }}" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo --> 
                 </a>
         </div>                
     </div>

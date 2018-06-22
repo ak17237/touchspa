@@ -1,7 +1,7 @@
 @extends('pages')
 @section('content')
 
-<main role="main">
+<main>
     <div class="content">
 	<div class="center">
             <div class="background">
@@ -9,7 +9,7 @@
                     <div class="paragraph">
 			<section>
                             <a id="cenas"></a>
-				<img src="images/cenas.png" alt="Cenas">
+				<img src="{{ asset('images/cenas.png') }}" alt="Cenas">
 				<h2>Cenas</h2>
 				<h3>Frizieru pakalpojumi</h3>
                                     <table>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App;
+use App\Akcija;
 class PageController extends Controller
 {
     public function parmums() {
@@ -11,10 +12,10 @@ class PageController extends Controller
         $infosF = App\Info::parmumsFilosofija();
         return view('Pages.parmums',compact('infosE','infosF'));
     }
-    public function akcija() {
-        $infos = App\Info::akcija();
-        return view('Pages.akcija',compact('infos'));
-    }
+    public function akcija(){
+        $akcijas = Akcija::all();
+       return view('Pages.Akcijas.akcija',['akcijas'=>$akcijas]);
+   }
     public function pakalpojumi() {
         $infos = App\Info::where('Vieta','Pakalpojumi')->SimplePaginate(5);
         return view('Pages.pakalpojumi',compact('infos'));

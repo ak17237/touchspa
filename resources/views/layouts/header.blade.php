@@ -12,7 +12,7 @@
 		</nav>
             </div>
                 <a href="/">
-                <img src="images/logo.png" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo -->
+                <img src="{{ asset('images/logo.png') }}" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo -->
                 </a>
         </div>                
     </div>
@@ -20,9 +20,9 @@
 	<div class="center">
             <aside> <!-- Informacija kura ir papildus visai citai informacijai -->
 		<ul>
-                    <li><a href="pakalpojumi?page=1">Klasiskā masāža</a></li>
-                    <li><a href="pakalpojumi?page=2">Pēdu masāža</a></li>
-                    <li><a href="pakalpojumi?page=3">Sejas masāža</a></li>
+                    <li><a href="/pakalpojumi?page=1">Klasiskā masāža</a></li>
+                    <li><a href="/pakalpojumi?page=2">Pēdu masāža</a></li>
+                    <li><a href="/pakalpojumi?page=3">Sejas masāža</a></li>
 		</ul>
             </aside>
 	</div>

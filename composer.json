@@ -10,7 +10,8 @@
         "cornford/googlmapper": "2.*",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "illuminate/html": "5.*"
     },
     "require-dev": {
         "filp/whoops": "^2.0",

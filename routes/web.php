@@ -35,3 +35,6 @@ Route::get('kontakti', function (){
     return view('Pages.kontakti');
 });
 Route::get('send','MailController@send');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

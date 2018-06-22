@@ -8,6 +8,7 @@
                     <a href="pakalpojumi">Pakalpojumi</a>
                     <a href="cenas">Cenas</a>
                     <a href="kontakti">Kontakti</a>
+                    <a href="login">Ieiet</a>
 		</nav>
             </div>
                 <a href="/">

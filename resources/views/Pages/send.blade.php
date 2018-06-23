@@ -7,8 +7,8 @@
             <div class="background">
 		<div class="block">
                     <div class="paragraph">
-                        <h1>Paldies par pierakstīšanos! Pārbaudiet savu e-pastu.</h1>
-                        <a class="send-to-homepage" href="/">Atgriezties uz sākumu</a>
+                        <h1>@lang('messages.thanks_subsctiption')</h1>
+                        <a class="send-to-homepage" href="/">@lang('messages.return_home')</a>
                     </div>
 		</div>
             </div>

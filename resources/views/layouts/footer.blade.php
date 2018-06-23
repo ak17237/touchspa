@@ -10,9 +10,9 @@
             </div>
             <div class="watch">
 		<img id="watch" src="{{ asset('images/watch.png') }}" alt="pulksteņa simbols">
-		<p>P, O, T, C, P: 09:00 - 20:00<br>
-		S: 09:00 - 20:00<br>
-		Sv: 10:00 - 18:00</p>
+		<p>@lang('messages.mon'), @lang('messages.tue'), @lang('messages.wed'), @lang('messages.thu'), @lang('messages.fri'): 09:00 - 20:00<br>
+		@lang('messages.sat'): 09:00 - 20:00<br>
+		@lang('messages.sun'): 10:00 - 18:00</p>
             </div>
             <p>Artjoms Korotkevičs - ak17237</p>
 	</div>

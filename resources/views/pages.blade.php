@@ -30,6 +30,11 @@
         form button {background: transparent;padding: 0px;border: 0px;}
         i {color:#337ab7}
         p.skats {text-align: center;}
+        div.header img.leng {float:right;margin-left: 5px;}
+        div.col-md-offset-1 {margin-left: 0px;}
+        div.container {width: 970px;}
+        div.navigation a {font-size: 15px;}
+        div.cenas th {text-align: right;}
     </style>
     </head>
     <body>

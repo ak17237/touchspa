@@ -6,8 +6,8 @@
         <div class="center">
             <div class="akcija">
                 <img src="{{ asset('images/akcija.jpg') }}" alt="Akcijas bilde" title="Akcijas bilde">
-                <h3>Klasiskā masāža. Akcija 50% klasiskajam masāžam.</h3>
-                <p><a href="akcija" target="_blank">Skaties šeit!</a></p>
+                <h3>@lang('messages.akcija')</h3>
+                <p><a href="akcija" target="_blank">@lang('messages.see_here')</a></p>
                 <div class="clear"></div>
             </div>
         </div>
@@ -16,9 +16,9 @@
 	<div class="center">
             <aside> <!-- Informacija kura ir papildus visai citai informacijai -->
 		<ul>
-                    <li><a href="pakalpojumi?page=1">Klasiskā masāža</a></li>
-                    <li><a href="pakalpojumi?page=2">Pēdu masāža</a></li>
-                    <li><a href="pakalpojumi?page=3">Sejas masāža</a></li>
+                    <li><a href="pakalpojumi?page=1">@lang('messages.classic_massage')</a></li>
+                    <li><a href="pakalpojumi?page=2">@lang('messages.feet_massage')</a></li>
+                    <li><a href="pakalpojumi?page=3">@lang('messages.face_massage')</a></li>
 		</ul>
             </aside>
 	</div>
@@ -31,9 +31,9 @@
 			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
                             <a id="parmums"></a>
                             <img src="images/about.png" alt="Par mums">
-                            <h2>Par mums</h2>
+                            <h2>@lang('messages.about_us')</h2>
                             @foreach($infos as $info)
-                            <p>{{$info->Teksts}}<a href="par-mums">Lasīt vairāk</a></p>
+                            <p>{{$info->Teksts}}<a href="par-mums">@lang('messages.read_more')</a></p>
                             @endforeach
 			</section>
                     </div>

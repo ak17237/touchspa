@@ -6,63 +6,43 @@
 	<div class="center">
             <div class="background">
 		<div class="block">
-                    <div class="paragraph">
+                    <div class="paragraph cenas">
 			<section>
                             <a id="cenas"></a>
 				<img src="{{ asset('images/cenas.png') }}" alt="Cenas">
-				<h2>Cenas</h2>
-				<h3>Frizieru pakalpojumi</h3>
+				<h2>@lang('messages.prices')</h2>
+				<h3>@lang('messages.haircut')</h3>
                                     <table>
                                         <tr>
-                                            <th></th>
-                                            <th>Meistars frizieris</th>
-                                            <th>Top meistars</th>
+                                            <th>@lang('messages.type')</th>
+                                            <th>@lang('messages.master_haircut')</th>
+                                            <th>@lang('messages.top_master')</th>
 					</tr>
-					<tr>
-                                            <td class="name">īsi mati</td>
-                                            <td>14.00</td>
-                                            <td>16.00</td>
+					@foreach($cenasF as $cenaF)
+                                        <tr>
+                                            <td class="name">{{ $cenaF->Tips }}</td>
+                                            <td>{{ $cenaF->MasterCena }}</td>
+                                            <td>{{ $cenaF->TopMasterCena }}</td>
 					</tr>
-					<tr>
-                                            <td class="name">vidēji mati</td>
-                                            <td>16.00</td>
-                                            <td>18.00</td>
-					</tr>
-					<tr>
-                                            <td class="name">gari mati</td>
-                                            <td>18.00</td>
-                                            <td>22.00</td>
-					</tr>
+                                        @endforeach
 				</table>
-                                <h3>Manikīra pakalpojumi</h3>
+                                <h3>@lang('messages.manicure')</h3>
                                 <table>
+                                    @foreach($cenasM as $cenaM)
                                     <tr>
-					<td class="name2">Klasiskais manikīrs</td>
-					<td>8.00</td>
+					<td class="name2">{{ $cenaM->Tips }}</td>
+					<td>{{ $cenaM->TopMasterCena }}</td>
                                     </tr>
-                                    <tr>
-                                        <td class="name2">Franču manikīrs</td>
-					<td>9.00</td>
-                                    </tr>
-                                    <tr>
-					<td class="name2">Nagu lakošana</td>
-					<td>2.00</td>
-                                    </tr>
+                                    @endforeach
                                 </table>
-				<h3>Pedikīrs</h3>
+				<h3>@lang('messages.pedicure')</h3>
 				<table>
+                                    @foreach($cenasP as $cenaP)
                                     <tr>
-					<td class="name2">Klasiskais pedikīrs</td>
-					<td>20.00</td>
+					<td class="name2">{{ $cenaP->Tips }}</td>
+					<td>{{ $cenaP->TopMasterCena }}</td>
                                     </tr>
-                                    <tr>
-					<td class="name2">Franču pedikīrs</td>
-					<td>22.00</td>
-                                    </tr>
-                                    <tr>
-					<td class="name2">Nagu lakošana</td>
-					<td>4.00</td>
-                                    </tr>
+                                    @endforeach
                                 </table>
 			</section>
                     </div>

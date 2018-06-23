@@ -9,7 +9,7 @@
 			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
                             <a id="parmums"></a>
                             <img src="{{ asset('images/about.png') }}" alt="Par mums">
-                            <h2>Par mums</h2>
+                            <h2>@lang('messages.about_us')</h2>
                             @foreach($infosF as $infoF)
                             <h3>{{$infoF->Virsraksts}}</h3>
                             <p>{{$infoF->Teksts}}</p>

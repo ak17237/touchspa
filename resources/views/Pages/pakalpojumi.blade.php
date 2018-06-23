@@ -9,7 +9,7 @@
                     <div class="paragraph">
 			<section>
 				<img src="{{ asset('images/pakalpojumi.png') }}" alt="Pakalpojumi">
-                                    <h2>Pakalpojumi</h2>
+                                    <h2>@lang('messages.services')</h2>
                                         {{$infos->links()}}
                                         @foreach($infos as $info)
                                         <h3>{{$info->Virsraksts}}</h3>

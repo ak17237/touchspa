@@ -8,11 +8,11 @@
 		<div class="block">
                     <div class="paragraph">
 			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
-                            <h2>Sazinaties ar mums</h2><br>
+                            <h2>@lang('messages.contact_us')</h2><br>
                             <div class="SPAgps" style="height: 250px; width: 780px;">{!! Mapper::render() !!}</div>
                             <div class="send">
-                                <h3>Piesakaties jaunumiem</h3><br>
-                                <a href="send">Pieteikties</a>
+                                <h3>@lang('messages.apply_news')</h3><br>
+                                <a href="send">@lang('messages.apply')</a>
                             </div>
                             <div class="kontakti">
 			<div class="center">
@@ -23,9 +23,9 @@
                                         tt2examacc@gmail.com</p>
 				</div>
 				<div class="watches">
-					<p>P, O, T, C, P: 09:00 - 20:00<br>
-					S: 09:00 - 20:00<br>
-					Sv: 10:00 - 18:00</p>
+					<p>@lang('messages.mon'), @lang('messages.tue'), @lang('messages.wed'), @lang('messages.thu'), @lang('messages.fri'): 09:00 - 20:00<br>
+                                        @lang('messages.sat'): 09:00 - 20:00<br>
+                                        @lang('messages.sun'): 10:00 - 18:00</p>
 				</div>
 			</div>
 		</div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App;
 use App\Akcija;
+use App\Price;
 class PageController extends Controller
 {
     public function parmums() {
@@ -21,9 +22,12 @@ class PageController extends Controller
         return view('Pages.pakalpojumi',compact('infos'));
     }
     public function cenas() {
-        return view('Pages.cenas');
+        $cenasF = Price::Frizieris();
+        $cenasM = Price::Manikirs();
+        $cenasP = Price::Pedikirs();
+        return view('Pages.cenas',compact('cenasF','cenasM','cenasP'));
     }
     public function send() {
         return view('Pages.send');
     }
-}
+    }

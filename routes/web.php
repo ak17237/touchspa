@@ -43,6 +43,8 @@ Route::post('akcija/{id}/atjaunot','AkcijasController@atjaunot')->name('akcija.a
 Route::get('akcija/{id}/skats','AkcijasController@skats')->name('akcija.skats');
 Route::delete('akcija/{id}/izdzēst','AkcijasController@dzēst')->name('akcija.dzēst');
 
+Route::get('lang/{locale}','LenguageController');
+
 Route::get('send','MailController@send');
 
 Auth::routes();

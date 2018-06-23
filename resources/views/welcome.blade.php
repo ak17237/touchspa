@@ -14,6 +14,8 @@
         div.paragraph a {color: #707070;}
         div.paragraph p {text-shadow: 0px 0px 0 #fff;line-height: 2;margin-left: 150px;}
         body {font: 16px Arial,Tahoma, sans-serif;}
+        div.header img.leng {float:right;margin-left: 5px;}
+        div.navigation a {font-size: 15px;}
     </style>
     </head>
     <body>

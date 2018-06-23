@@ -7,6 +7,7 @@ a:hover {transition: all 0.5s;}
 div.center{width: 1000px; margin: 0 auto;} /*  NAvigācijas centrēšana. margin - lai izveidot brīvu telpu ap elementiem,neskatoties uz definētām robežām */
 div.header{padding-top:20px;background-color: #070b14;} /* Navigācijas fons. padding - radīt vietu ap elementa saturu, iekšpusē jebkuras noteiktas robežas. */
 div.footer {margin: 20px 0 0 150px;}
+div.header a {margin-left: 300px;}
 
 
 

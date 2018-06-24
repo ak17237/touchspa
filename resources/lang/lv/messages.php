@@ -46,7 +46,11 @@ return [
     'master_haircut' => 'Meistars frizieris',
     'top_master' => 'Top meistars',
     'type' => 'Tips',
-    
+    'special_offers' => 'Īpašie piedāvājumi',
+    'create' => 'Izveidot',
+    'num' => 'Nr',
+    'title' => 'Nosaukums',
+    'action' => 'Darbība',
     
     
 ];

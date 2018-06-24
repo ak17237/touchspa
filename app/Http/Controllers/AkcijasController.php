@@ -9,10 +9,6 @@ use App\Http\Requests\izveidotAkcijasRequest;
 
 class AkcijasController extends Controller
 {
-   public function akcija() {
-        $infos = App\Info::akcija();
-        return view('Pages.Akcijas.akcija1',compact('infos'));
-    }
     public function izveidot(){
         return view('Pages.Akcijas.izveidot');
     }

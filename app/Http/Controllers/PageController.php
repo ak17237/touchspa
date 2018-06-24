@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App;
 use App\Akcija;
 use App\Price;
+use Illuminate\Support\Facades\Auth;
 class PageController extends Controller
 {
     public function parmums() {

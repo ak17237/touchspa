@@ -18,62 +18,50 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<!--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo-big.png') }}"> <!--Tab loga logo pie nosaukuma-->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all"> <!-- pieslēdz css failu -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {font: 16px Arial,Tahoma, sans-serif;}
+        div.paragraph{background: #ffffff;}
+        div.paragraph p {margin-right: 50px;}
+        div.paragraph a {color: #707070;}
+        img.spaakcija {margin-left: 50px;}
+        div.SPAgps {margin-left: 50px;}
+        div.GPS {float:left;padding-right: 230px;}
+        div.send a {font-size: 20px; color: #fff; font-weight: bold;
+	background: #b23600; border: 1px solid #862900; padding: 5px 15px;
+	border-radius: 3px; box-shadow: 2px 2px 7px -1px #777; text-shadow:0px 0px 3px #752300;margin-left: 385px;}
+        div.paragraph h1 {font-size: 35px;margin-left: 30px;}
+        div.paragraph a.send-to-homepage {margin-left: 385px;}
+        div.watches p{margin-right:200px;}
+        div.tabula_akcijas {margin: auto;width: 100%;}
+        div.tabula_akcijas td {text-align:center;}
+        div.tabula_akcijas th {text-align:center;}
+        div.paragraph a.izveidot {color: white;}
+        form {display: inline}
+        form button {background: transparent;padding: 0px;border: 0px;}
+        i {color:#337ab7}
+        p.skats {text-align: center;}
+        div.header img.leng {float:right;margin-left: 5px;}
+        div.col-md-offset-1 {margin-left: 0px;}
+        div.container {width: 970px;}
+        div.navigation a {font-size: 15px;}
+        div.cenas th {text-align: right;}
+        div.nav a.dashboard {margin-left: 280px;}
+        div.nav a.register {margin-left: 280px;}
+    </style>
 </head>
 <body>
+    @include('layouts.header')
+    
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Touch SPA
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">@lang('messages.login')</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">@lang('messages.register')</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        @lang('messages.logout')
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <main class="py-4">
-            @yield('content')
+           @yield('content')
         </main>
     </div>
+    @include('layouts.footer')
 </body>
 </html>

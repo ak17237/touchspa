@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class contactMail extends Mailable
+class TouchSpa extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,6 +28,6 @@ class contactMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email')->to('tt2examacc@gmail.com');
+        return $this->markdown('email')->to('sasuke134@inbox.lv');
     }
 }

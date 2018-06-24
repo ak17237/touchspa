@@ -35,6 +35,9 @@
         div.container {width: 970px;}
         div.navigation a {font-size: 15px;}
         div.cenas th {text-align: right;}
+        div.nav a {padding-top: 0}
+        div.nav a.dashboard {margin-left: 280px;}
+        div.nav a.register {margin-left: 280px;}
     </style>
     </head>
     <body>

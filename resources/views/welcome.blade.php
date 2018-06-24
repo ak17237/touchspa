@@ -16,6 +16,8 @@
         body {font: 16px Arial,Tahoma, sans-serif;}
         div.header img.leng {float:right;margin-left: 5px;}
         div.navigation a {font-size: 15px;}
+        div.nav a.dashboard {margin-left: 280px;}
+        div.nav a.register {margin-left: 280px;}
     </style>
     </head>
     <body>

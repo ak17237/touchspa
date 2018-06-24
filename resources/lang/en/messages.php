@@ -46,6 +46,11 @@ return [
     'master_haircut' => 'Haircut master',
     'top_master' => 'Top master',
     'type' => 'Type',
+    'special_offers' => 'Special offers',
+    'create' => 'Create',
+    'num' => 'Num',
+    'title' => 'Title',
+    'action' => 'Action',
     
     
     

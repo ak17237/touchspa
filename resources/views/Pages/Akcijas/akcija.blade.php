@@ -9,15 +9,15 @@
                     <div class="paragraph tabula_akcijas">
 			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
                         <img src="{{ asset('images/akcija.png') }}" alt="Klasiskā masāža">
-                        <h2>Īpašie piedāvājumi</h2>
-                        <a href="akcija/izveidot" class="btn btn-success izveidot">Izveidot</a>
+                        <h2>@lang('messages.special_offers')</h2>
+                        <a href="akcija/izveidot" class="btn btn-success izveidot">@lang('messages.create')</a>
                         <br>   
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Nr</th>
-                                        <th>Nosaukums</th>
-                                        <th>Darbība</th>
+                                        <th>@lang('messages.num')</th>
+                                        <th>@lang('messages.title')</th>
+                                        <th>@lang('messages.action')</th>
                                     </tr>
                                 </thead>
                                 <tbody>

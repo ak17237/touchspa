@@ -1,0 +1,95 @@
+        body {font: 16px Arial,Tahoma, sans-serif;}
+        div.paragraph{background: #ffffff;}
+        div.paragraph p {margin-right: 50px;}
+        div.paragraph a {color: #707070;}
+        img.spaakcija {margin-left: 50px;}
+        div.SPAgps {margin-left: 50px;}
+        div.GPS {float:left;padding-right: 230px;}
+        div.send a {font-size: 20px; color: #fff; font-weight: bold;
+	background: #b23600; border: 1px solid #862900; padding: 5px 15px;
+	border-radius: 3px; box-shadow: 2px 2px 7px -1px #777; text-shadow:0px 0px 3px #752300;margin-left: 385px;}
+        div.paragraph h1 {font-size: 35px;margin-left: 30px;}
+        div.paragraph a.send-to-homepage {margin-left: 385px;}
+        div.watches p{margin-right:200px;}
+        div.tabula_akcijas {margin: auto;width: 100%;}
+        div.tabula_akcijas td {text-align:center;}
+        div.tabula_akcijas th {text-align:center;}
+        div.paragraph a.izveidot {color: white;}
+        form {display: inline}
+        form button {background: transparent;padding: 0px;border: 0px;}
+        i {color:#337ab7}
+        p.skats {text-align: center;}
+        div.header img.leng {float:right;margin-left: 5px;}
+        div.col-md-offset-1 {margin-left: 0px;}
+        div.container {width: 970px;}
+        div.navigation a {font-size: 15px;}
+        div.cenas th {text-align: right;}
+        div.nav a.dashboard {margin-left: 280px;}
+        div.nav a.register {margin-left: 280px;}
+        div.paragraph table.adminpanel {text-align: unset;}
+        div.paragraph.adminpanel {margin-top: 25px;}
+        /* Customize the label (the container) */
+.checkboxes {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxes input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxes:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxes input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxes input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxes .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

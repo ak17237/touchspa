@@ -51,6 +51,6 @@ return [
     'num' => 'Nr',
     'title' => 'Nosaukums',
     'action' => 'Darbība',
-    
+    'akcijas_message' => 'Tikai reģistrētiem lietotājiem var skatīties akcijas'
     
 ];

@@ -7,10 +7,14 @@
             <div class="background">
 		<div class="block">
                     <div class="paragraph tabula_akcijas">
-			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
                         <img src="{{ asset('images/akcija.png') }}" alt="Klasiskā masāža">
                         <h2>@lang('messages.special_offers')</h2>
+                        @guest
+                        <h3>@lang('messages.akcijas_message')</h3>
+                        @else
+                        @if (Auth::user()->hasRole('Admin'))
                         <a href="akcija/izveidot" class="btn btn-success izveidot">@lang('messages.create')</a>
+                        @endif
                         <br>   
                             <table class="table">
                                 <thead>
@@ -29,6 +33,7 @@
                                             <a href="{{ route('akcija.skats',$akcija->id) }}">
                                                 <i class="glyphicon glyphicon-eye-open"></i>
                                             </a>
+                                            @if (Auth::user()->hasRole('Admin'))
                                             <a href="{{ route('akcija.izmainīt',$akcija->id) }}">
                                                 <i class="glyphicon glyphicon-edit"></i>
                                             </a>
@@ -37,13 +42,14 @@
                                                 <button onclick="return confirm('Vai esi pārliecināts?')"><i class="glyphicon glyphicon-remove"></i></button>
                                                 {!! Form::close() !!}
                                             </a>
+                                            @endif
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
+                            @endguest
                         </div>    
-			</section>
                     </div>
 		</div>
             </div>

@@ -51,6 +51,7 @@ return [
     'num' => 'Num',
     'title' => 'Title',
     'action' => 'Action',
+    'akcijas_message' => 'Only registred users can view special offers'
     
     
     

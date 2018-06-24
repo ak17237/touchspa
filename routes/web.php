@@ -36,12 +36,27 @@ Route::get('kontakti', function (){
     return view('Pages.kontakti');
 });
 
-Route::get('akcija/izveidot','AkcijasController@izveidot')->name('akcija.izveidot');
+Route::get('akcija/izveidot',[
+    'uses' => 'AkcijasController@izveidot',
+    'as' => 'akcija.izveidot',
+    'middleware' =>  'roles',
+    'roles' => ['Admin']
+        ]);
 Route::post('akcija/ierakstīt','AkcijasController@ierakstīt')->name('akcija.ierakstīt');
-Route::get('akcija/{id}/izmainīt','AkcijasController@izmainīt')->name('akcija.izmainīt');
+Route::get('akcija/{id}/izmainīt',[
+    'uses' => 'AkcijasController@izmainīt',
+    'as' => 'akcija.izmainīt',
+    'middleware' =>  'roles',
+    'roles' => ['Admin']
+]);
 Route::post('akcija/{id}/atjaunot','AkcijasController@atjaunot')->name('akcija.atjaunot');
 Route::get('akcija/{id}/skats','AkcijasController@skats')->name('akcija.skats');
-Route::delete('akcija/{id}/izdzēst','AkcijasController@dzēst')->name('akcija.dzēst');
+Route::delete('akcija/{id}/izdzēst',[
+    'uses' => 'AkcijasController@dzēst',
+    'as' => 'akcija.dzēst',
+    'middleware' =>  'roles',
+    'roles' => ['Admin']
+]);
 
 Route::get('lang/{locale}','LenguageController');
 

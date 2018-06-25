@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Role;
 
 class HomeController extends Controller
 {
@@ -24,8 +25,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $user = User::where('email', $request['email'])->first();
-        $users = User::all();
-        return view('home',['users' => $users,'user' => $user]);
+        return view('home');
     }
+    
 }

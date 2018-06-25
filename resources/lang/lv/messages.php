@@ -51,6 +51,9 @@ return [
     'num' => 'Nr',
     'title' => 'Nosaukums',
     'action' => 'Darbība',
-    'akcijas_message' => 'Tikai reģistrētiem lietotājiem var skatīties akcijas'
+    'akcijas_message' => 'Tikai reģistrētiem lietotājiem var skatīties akcijas',
+    'user' => 'Lietotājs',
+    'admin' => 'Administrātors',
+    'admin_panel' => 'Administratora Panelis'
     
 ];

@@ -57,6 +57,18 @@ Route::delete('akcija/{id}/izdzēst',[
     'middleware' =>  'roles',
     'roles' => ['Admin']
 ]);
+Route::get('/home/adminpanel',[
+    'uses' => 'AdminController@index',
+    'as' => 'admin.panel',
+    'middleware' => 'roles',
+    'roles' => ['Admin']
+    ]);
+Route::post('/home/adminpanel/assign-roles', [
+    'uses' => 'AdminController@assignroles',
+    'as' => 'admin.assign',
+    'middleware' => 'roles',
+    'roles' => ['Admin']
+    ]);
 
 Route::get('lang/{locale}','LenguageController');
 
@@ -64,5 +76,5 @@ Route::get('send','MailController@send');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home','HomeController@index')->name('home');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');

@@ -51,7 +51,10 @@ return [
     'num' => 'Num',
     'title' => 'Title',
     'action' => 'Action',
-    'akcijas_message' => 'Only registred users can view special offers'
+    'akcijas_message' => 'Only registred users can view special offers',
+    'user' => 'User',
+    'admin' => 'Admin',
+    'admin_panel' => 'Admin Panel'
     
     
     

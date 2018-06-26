@@ -82,7 +82,10 @@ Route::post('unsend',[
     'as' => 'unsend.email',
     'middleware' => 'unmails'
     ]);
-
+Route::get('/upload','UploadController@index')->name('upload.main');
+Route::post('/upload/store','UploadController@store')->name('upload.store');
+Route::get('upload/show/{filename}','UploadController@getfile')->name('upload.file');
+Route::post('upload/delete','UploadController@deletefile')->name('upload.delete');
 Auth::routes();
 
 Route::get('/home','HomeController@index')->name('home');

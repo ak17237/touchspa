@@ -24,6 +24,7 @@
                                         @csrf
                                     </form>
                     <a class="dashboard "href="/home">@lang('messages.dashboard')</a>
+                    <a href="{{ route('upload.main') }}">@lang('messages.avatar')</a>
                     @endguest
 		</nav>
             </div>

@@ -59,7 +59,12 @@ return [
     'insufficient_permissions' => 'Insufficient permissions',
     'error_login' => 'You have to be logged in',
     'error_unapply' => 'You have not applied yet',
-    'error_apply' => 'You have already applied'
+    'error_apply' => 'You have already applied',
+    'upload' => 'Upload',
+    'avatar' => 'Avatar',
+    'delete' => 'Delete',
+    'no_upload' => 'Nothing to upload',
+    'no_delete' => 'Nothing to delete'
     
     
     

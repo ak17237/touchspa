@@ -59,6 +59,11 @@ return [
     'insufficient_permissions' => 'Nepietiekamas tiesības',
     'error_login' => 'Jums jābūt ielogotam',
     'error_unapply' => 'Jūs vēl nepierakstījāties',
-    'error_apply' => 'Jūs jau pierakstījāties'
+    'error_apply' => 'Jūs jau pierakstījāties',
+    'upload' => 'Ielādēt',
+    'avatar' => 'Profila bilde',
+    'delete' => 'Dzēst',
+    'no_upload' => 'Nav izvēlēts fails',
+    'no_delete' => 'Nav ko dzēst'
     
 ];

@@ -41,4 +41,7 @@ class User extends Authenticatable
         }
         return false;
     }
+    public static function Subsribed(){
+        return static::where('SubStatus',true)->get(['email']);
+    }
 }

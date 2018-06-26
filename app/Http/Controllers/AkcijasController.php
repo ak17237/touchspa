@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Akcija;
+use Mail;
+use App\Mail\Mailing;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Http\Requests\izveidotAkcijasRequest;
 
@@ -21,7 +23,7 @@ public function ierakstīt(izveidotAkcijasRequest $request){
 //      $akcija = new Akcija();
 //      $akcija->fill($request->all());
 //      $akcija->save();
-      
+      Mail::send(new Mailing());
     return redirect()->route('akcija');
 
 //    $akcija = new Akcija; 

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Lang;
 
 class CheckRole
 {
@@ -16,7 +17,7 @@ class CheckRole
     public function handle($request, Closure $next)
     {
         if($request->user() == null){
-            return response('Insufficient permissions', 401);
+            return response(Lang::get('messages.insufficient_permissions'), 401);
         }
         $actions = $request->route()->getAction();
         $roles = isset($actions['roles']) ? $actions['roles'] : null;
@@ -24,6 +25,6 @@ class CheckRole
         if($request->user()->hasAnyRole($roles) || !$roles) {
             return $next($request);
         }
-        return response('Insufficient permissions', 401);
+        return response(Lang::get('messages.insufficient_permissions'), 401);
     }
 }

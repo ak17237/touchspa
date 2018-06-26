@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class TouchSpa extends Mailable
+class UnapplyTouchSpa extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -29,6 +29,6 @@ class TouchSpa extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email')->to(Auth::user()->email);
+        return $this->markdown('unemail')->to(Auth::user()->email);
     }
 }

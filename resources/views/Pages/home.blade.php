@@ -7,7 +7,7 @@
             <div class="akcija">
                 <img src="{{ asset('images/akcija.jpg') }}" alt="Akcijas bilde" title="Akcijas bilde">
                 <h3>@lang('messages.akcija')</h3>
-                <p><a href="akcija" target="_blank">@lang('messages.see_here')</a></p>
+                <p><a href="akcija">@lang('messages.see_here')</a></p>
                 <div class="clear"></div>
             </div>
         </div>

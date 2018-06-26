@@ -9,10 +9,18 @@
                     <div class="paragraph">
 			<section> <!-- Informācijas dalīšana uz atsevišķiem loģiskiem apgabaliem -->
                             <h2>@lang('messages.contact_us')</h2><br>
-                            <div class="SPAgps" style="height: 250px; width: 780px;">{!! Mapper::render() !!}</div>
+                            <div class="SPAgps" style="height: 250px; width: 780px;">{!! Mapper::render() !!}</div><br>
                             <div class="send">
+                                @include('Pages.Akcijas.error')
                                 <h3>@lang('messages.apply_news')</h3><br>
-                                <a href="send">@lang('messages.apply')</a>
+                                <div style="text-align: center">
+                                {!! Form::open(['route' => ['send.email']]) !!}
+                                <button class="button" style="background-color: #3e9a1e">@lang('messages.apply')</button>
+                                {!! Form::close() !!}
+                                {!! Form::open(['route' => ['unsend.email']]) !!}
+                                <button class="button" style="background-color: #f32d2d;">@lang('messages.unapply')</button>
+                                {!! Form::close() !!}
+                                </div>
                             </div>
                             <div class="kontakti">
 			<div class="center">

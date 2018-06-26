@@ -54,7 +54,12 @@ return [
     'akcijas_message' => 'Only registred users can view special offers',
     'user' => 'User',
     'admin' => 'Admin',
-    'admin_panel' => 'Admin Panel'
+    'admin_panel' => 'Admin Panel',
+    'unapply' => 'Unapply',
+    'insufficient_permissions' => 'Insufficient permissions',
+    'error_login' => 'You have to be logged in',
+    'error_unapply' => 'You have not applied yet',
+    'error_apply' => 'You have already applied'
     
     
     

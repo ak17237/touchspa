@@ -54,6 +54,11 @@ return [
     'akcijas_message' => 'Tikai reģistrētiem lietotājiem var skatīties akcijas',
     'user' => 'Lietotājs',
     'admin' => 'Administrātors',
-    'admin_panel' => 'Administratora Panelis'
+    'admin_panel' => 'Administratora Panelis',
+    'unapply' => 'Atteikties',
+    'insufficient_permissions' => 'Nepietiekamas tiesības',
+    'error_login' => 'Jums jābūt ielogotam',
+    'error_unapply' => 'Jūs vēl nepierakstījāties',
+    'error_apply' => 'Jūs jau pierakstījāties'
     
 ];

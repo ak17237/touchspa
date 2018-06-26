@@ -72,7 +72,16 @@ Route::post('/home/adminpanel/assign-roles', [
 
 Route::get('lang/{locale}','LenguageController');
 
-Route::get('send','MailController@send');
+Route::post('send',[
+    'uses' => 'MailController@send',
+    'as' => 'send.email',
+    'middleware' => 'mails'
+    ]);
+Route::post('unsend',[
+    'uses' => 'MailController@unsend',
+    'as' => 'unsend.email',
+    'middleware' => 'unmails'
+    ]);
 
 Auth::routes();
 

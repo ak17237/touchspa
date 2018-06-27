@@ -64,7 +64,9 @@ return [
     'avatar' => 'Avatar',
     'delete' => 'Delete',
     'no_upload' => 'Nothing to upload',
-    'no_delete' => 'Nothing to delete'
+    'no_delete' => 'Nothing to delete',
+    'success_apply' => 'You have successfully applied',
+    'success_unapply' => 'You have successfully unscribed'
     
     
     

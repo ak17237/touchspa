@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\Role;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -25,7 +24,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        return view('home');
+        return view('home',['user' => Auth::user()]);
     }
     
 }

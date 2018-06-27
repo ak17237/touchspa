@@ -22,7 +22,9 @@
                                             margin-right: auto;
                                             width: 29%;">
                                 @if(Storage::disk('local')->has($user->name . '-' . $user->id . '.png'))
-                                <img src="{{ route('upload.file',['filename' => $user->name . '-' . $user->id . '.png']) }}" alt="" class="img-responsive">
+                                    <img src="{{ route('upload.file',['filename' => $user->name . '-' . $user->id . '.png']) }}" alt="" class="img-responsive">
+                                @else
+                                    <img src="{{ route('upload.file',['filename' => 'empty' . '-' . 'avatar' . '.png']) }}" alt="" class="img-responsive">
                                 @endif
                                 </div>
                                 <div style="text-align: center">

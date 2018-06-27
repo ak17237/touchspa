@@ -13,10 +13,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    <div class="welcome" style="margin-left: 220px;">
                     @lang('messages.login_message') {{Auth::user()->name}}
+                    </div>
+                    @if(Storage::disk('local')->has($user->name . '-' . $user->id . '.png'))
+                                <img style="margin-top: 20px;margin-left: 254px;" height="135" width="135" src="{{ route('upload.file',['filename' => $user->name . '-' . $user->id . '.png']) }}" alt="" class="img-responsive">
+                    @endif
                     @if (Auth::user()->hasRole('Admin'))
-                    <div class="paragraph adminpanel" style="border: 0;">                        
+                    <div class="paragraph adminpanel" style="border: 0;"><br>                        
                         <a class="button" href="{{ route('admin.panel') }}" style="margin-left: 200px">@lang('messages.admin_panel')</a>
                         </div>
                     </div>

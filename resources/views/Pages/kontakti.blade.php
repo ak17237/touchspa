@@ -12,6 +12,11 @@
                             <div class="SPAgps" style="height: 250px; width: 780px;">{!! Mapper::render() !!}</div><br>
                             <div class="send">
                                 @include('Pages.Akcijas.error')
+                                @if(session()->has('message'))
+                                    <div class="alert alert-success">
+                                        {{ session()->get('message') }}
+                                    </div>
+                                @endif
                                 <h3>@lang('messages.apply_news')</h3><br>
                                 <div style="text-align: center">
                                 {!! Form::open(['route' => ['send.email']]) !!}

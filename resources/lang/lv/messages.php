@@ -64,6 +64,8 @@ return [
     'avatar' => 'Profila bilde',
     'delete' => 'Dzēst',
     'no_upload' => 'Nav izvēlēts fails',
-    'no_delete' => 'Nav ko dzēst'
+    'no_delete' => 'Nav ko dzēst',
+    'success_apply' => 'Jūs veiksmīgi pietecāties mūsu jaunumiem',
+    'success_unapply' => 'Jūs esat veiksmīgi atteikušies no mūsu jaunumiem'
     
 ];

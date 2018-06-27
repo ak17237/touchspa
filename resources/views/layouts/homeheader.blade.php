@@ -28,11 +28,11 @@
                     <a href="{{ route('user.main') }}">@lang('messages.users') online</a>
                     @endguest
 		</nav>
-            </div>    
-        </div>  
-        <a href="/">
+            </div> 
+            <a href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo --> 
-                </a>
+            </a>
+        </div>
     </div>
 </header>    
 

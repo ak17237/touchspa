@@ -66,6 +66,9 @@ return [
     'no_upload' => 'Nav izvēlēts fails',
     'no_delete' => 'Nav ko dzēst',
     'success_apply' => 'Jūs veiksmīgi pietecāties mūsu jaunumiem',
-    'success_unapply' => 'Jūs esat veiksmīgi atteikušies no mūsu jaunumiem'
+    'success_unapply' => 'Jūs esat veiksmīgi atteikušies no mūsu jaunumiem',
+    'assign_roles' => 'Uzstādīt tiesības',
+    'last' => 'Pēdējais',
+    'now' => 'Tagad'
     
 ];

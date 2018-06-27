@@ -57,6 +57,7 @@ Route::delete('akcija/{id}/izdzēst',[
     'middleware' =>  'roles',
     'roles' => ['Admin']
 ]);
+
 Route::get('/home/adminpanel',[
     'uses' => 'AdminController@index',
     'as' => 'admin.panel',
@@ -82,10 +83,13 @@ Route::post('unsend',[
     'as' => 'unsend.email',
     'middleware' => 'unmails'
     ]);
+
 Route::get('/upload','UploadController@index')->name('upload.main');
 Route::post('/upload/store','UploadController@store')->name('upload.store');
 Route::get('upload/show/{filename}','UploadController@getfile')->name('upload.file');
 Route::post('upload/delete','UploadController@deletefile')->name('upload.delete');
+
+Route::get('/users','UserController@index')->name('user.main');
 Auth::routes();
 
 Route::get('/home','HomeController@index')->name('home');

@@ -25,6 +25,7 @@
                                     </form>
                     <a class="dashboard "href="/home">@lang('messages.dashboard')</a>
                     <a href="{{ route('upload.main') }}">@lang('messages.avatar')</a>
+                    <a href="{{ route('user.main') }}">Users online</a>
                     @endguest
 		</nav>
             </div>

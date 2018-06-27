@@ -66,7 +66,10 @@ return [
     'no_upload' => 'Nothing to upload',
     'no_delete' => 'Nothing to delete',
     'success_apply' => 'You have successfully applied',
-    'success_unapply' => 'You have successfully unscribed'
+    'success_unapply' => 'You have successfully unscribed',
+    'assign_roles' => 'Assign Roles',
+    'last' => 'Last',
+    'now' => 'Now'
     
     
     

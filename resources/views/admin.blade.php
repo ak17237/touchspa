@@ -14,7 +14,7 @@
                                 <th>@lang('messages.email')</th>
                                 <th>@lang('messages.user')</th>
                                 <th>@lang('messages.admin')</th>
-                                <th style="padding-left: 50px;">Action</th>
+                                <th style="padding-left: 50px;">@lang('messages.action')</th>
                             </tr>
                         </thead>
                         @foreach($users as $user)
@@ -32,7 +32,7 @@
                     <td><label class="checkboxes"><input type="checkbox" name="role_user" {{ $user->hasRole('User') ? 'checked' : '' }} ><span class="checkmark"></span></label></td>
                     <td><label class="checkboxes"><input type="checkbox" name="role_admin" {{ $user->hasRole('Admin') ? 'checked' : '' }} ><span class="checkmark"></span></label></td>
                     {{ csrf_field() }}
-                    <td><button class="button">Assign Roles</button></td>
+                    <td><button class="button">@lang('messages.assign_roles')</button></td>
                         {!! Form::close() !!}
                             </tr>    
                         </tbody>

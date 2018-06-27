@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Cache;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -43,5 +44,8 @@ class User extends Authenticatable
     }
     public static function Subsribed(){
         return static::where('SubStatus',true)->get(['email']);
+    }
+    public function isOnline(){
+        return Cache::has('user-is-online-' . $this->id);
     }
 }

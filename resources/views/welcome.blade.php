@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all"> <!-- pieslēdz css failu -->
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <link rel="stylesheet" href="{{ asset('css/welcomestyle.css') }}">
+                <style>
+                    div.nav a.dashboard {margin-left: 150px}
+                    div.nav a.avatar {margin-left: 338px;}
+                    div.nav a.register {margin-left: 150px;}
+                </style>
     </head>
     <body>
     

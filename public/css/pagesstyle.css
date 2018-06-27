@@ -25,5 +25,8 @@
         div.navigation a {font-size: 15px;}
         div.cenas th {text-align: right;}
         div.nav a {padding-top: 0}
-        div.nav a.dashboard {margin-left: 280px;}
-        div.nav a.register {margin-left: 280px;}
+        div.nav a.register {margin-left: 150px;}
+        div.paragraph a.btn-primary {color: white;font-weight: bold;text-align: center}
+                div.btn-group {margin-left: 245px;}
+                div.nav a.dashboard {margin-left: 150px}
+                div.nav a.avatar {margin-left: 338px;}

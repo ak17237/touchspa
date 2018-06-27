@@ -24,7 +24,7 @@
                                         @csrf
                                     </form>
                     <a class="dashboard "href="/home">@lang('messages.dashboard')</a>
-                    <a href="{{ route('upload.main') }}">@lang('messages.avatar')</a>
+                    <a class="avatar" href="{{ route('upload.main') }}">@lang('messages.avatar')</a>
                     <a href="{{ route('user.main') }}">@lang('messages.users') online</a>
                     @endguest
 		</nav>

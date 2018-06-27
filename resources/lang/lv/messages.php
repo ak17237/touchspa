@@ -53,6 +53,7 @@ return [
     'action' => 'Darbība',
     'akcijas_message' => 'Tikai reģistrētiem lietotājiem var skatīties akcijas',
     'user' => 'Lietotājs',
+    'users' => 'Lietotāji',
     'admin' => 'Administrātors',
     'admin_panel' => 'Administratora Panelis',
     'unapply' => 'Atteikties',

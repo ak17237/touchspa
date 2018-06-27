@@ -18,8 +18,8 @@ class PageController extends Controller
         $akcijas = Akcija::all();
        return view('Pages.Akcijas.akcija',['akcijas'=>$akcijas]);
    }
-    public function pakalpojumi() {
-        $infos = App\Info::where('Vieta','Pakalpojumi')->SimplePaginate(5);
+    public function pakalpojumi($page) {
+        $infos = App\Info::where('Vieta','Pakalpojumi')->SimplePaginate(5,['*'], 'page', $page);
         return view('Pages.pakalpojumi',compact('infos'));
     }
     public function cenas() {

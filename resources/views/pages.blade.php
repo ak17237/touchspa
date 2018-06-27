@@ -10,7 +10,10 @@
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <link rel="stylesheet" href="{{ asset('css/pagestyle.css') }}">
                 <link rel="stylesheet" href="{{ asset('css/table.css') }}">
-                
+                <style>
+                div.paragraph a.btn-primary {color: white;font-weight: bold;text-align: center}
+                div.btn-group {margin-left: 245px;}
+                </style>
     </head>
     <body>
     

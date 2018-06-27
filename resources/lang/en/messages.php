@@ -53,6 +53,7 @@ return [
     'action' => 'Action',
     'akcijas_message' => 'Only registred users can view special offers',
     'user' => 'User',
+    'users' => 'Users',
     'admin' => 'Admin',
     'admin_panel' => 'Admin Panel',
     'unapply' => 'Unapply',

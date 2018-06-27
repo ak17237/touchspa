@@ -7,7 +7,7 @@
 		<nav> <!--  Galvenā mājaslapas navigācija -->
                     <a href="/">@lang('messages.home')</a> 
                     <a href="/par-mums">@lang('messages.about_us')</a>
-                    <a href="/pakalpojumi">@lang('messages.services')</a>
+                    <a href="/pakalpojumi/page/1">@lang('messages.services')</a>
                     <a href="/cenas">@lang('messages.prices')</a>
                     <a href="/kontakti">@lang('messages.contacts')</a>
                     @guest
@@ -25,14 +25,14 @@
                                     </form>
                     <a class="dashboard "href="/home">@lang('messages.dashboard')</a>
                     <a href="{{ route('upload.main') }}">@lang('messages.avatar')</a>
-                    <a href="{{ route('user.main') }}">Users online</a>
+                    <a href="{{ route('user.main') }}">@lang('messages.users') online</a>
                     @endguest
 		</nav>
-            </div>
-                <a href="/">
+            </div>    
+        </div>  
+        <a href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="SPA logo" title="SPA logo"> <!-- mājaslapas logo --> 
                 </a>
-        </div>                
     </div>
 </header>    
 

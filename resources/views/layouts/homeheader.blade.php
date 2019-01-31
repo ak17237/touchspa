@@ -7,7 +7,7 @@
 		<nav> <!--  Galvenā mājaslapas navigācija -->
                     <a href="/">@lang('messages.home')</a> 
                     <a href="/par-mums">@lang('messages.about_us')</a>
-                    <a href="/pakalpojumi/page/1">@lang('messages.services')</a>
+                    <a href="/pakalpojumi/1">@lang('messages.services')</a>
                     <a href="/cenas">@lang('messages.prices')</a>
                     <a href="/kontakti">@lang('messages.contacts')</a>
                     @guest

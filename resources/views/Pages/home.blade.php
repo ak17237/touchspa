@@ -16,9 +16,9 @@
 	<div class="center">
             <aside> <!-- Informacija kura ir papildus visai citai informacijai -->
 		<ul>
-                    <li><a href="/pakalpojumi/page/1">@lang('messages.classic_massage')</a></li>
-                    <li><a href="/pakalpojumi/page/2">@lang('messages.feet_massage')</a></li>
-                    <li><a href="/pakalpojumi/page/3">@lang('messages.face_massage')</a></li>
+                    <li><a href="/pakalpojumi/1">@lang('messages.classic_massage')</a></li>
+                    <li><a href="/pakalpojumi/2">@lang('messages.feet_massage')</a></li>
+                    <li><a href="/pakalpojumi/3">@lang('messages.face_massage')</a></li>
 		</ul>
             </aside>
 	</div>

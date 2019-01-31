@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Cache;
 Route::get('/','WelcomeController@welcome');
 Route::get('par-mums','PageController@parmums');
 Route::get('akcija','PageController@akcija')->name('akcija');
-Route::get('pakalpojumi/page/{page}','PageController@pakalpojumi');
+Route::get('pakalpojumi/{page}','PageController@pakalpojumi');
 Route::get('cenas','PageController@cenas');
 Route::get('kontakti','PageController@kontakti');
 

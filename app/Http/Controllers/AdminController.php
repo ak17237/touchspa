@@ -26,4 +26,5 @@ public function assignroles(Request $request){
        }
         return redirect()->back();
     }
+
 }

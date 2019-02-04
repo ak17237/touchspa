@@ -2,21 +2,25 @@ jQuery('document').ready(function(){
     
     if($("#type").val() == "yesfees")jQuery('#fevent').hide();
     var sf,cc,result;
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     function calculate(s,c){
 
         var a = $('#quan').val() * $('#amount').val();
         var b,c,d,f;
         a = parseInt(a);
-        jQuery('.gross').html(a);
+        jQuery('.gross').html(numberWithCommas(a));
         b = a * 0.03;
-        jQuery('.ticket-fee').html(b.toFixed(0));
+        jQuery('.ticket-fee').html(numberWithCommas(b.toFixed(0)));
         c = a * (s/100) + (0.25 * c);
-        jQuery('.stripe-total').html(c.toFixed(2));
+        jQuery('.stripe-total').html(numberWithCommas(c.toFixed(2)));
         d = b + c;
-        jQuery('.estimated-fees').html(d.toFixed(2));
+        jQuery('.estimated-fees').html(numberWithCommas(d.toFixed(2)));
         f = a - d;
-        jQuery('.estimated-total').html(f.toFixed(2));
+        jQuery('.estimated-total').html(numberWithCommas(f.toFixed(2)));
     }
+    
 
     jQuery('#type').change(function(){
 

@@ -66,6 +66,20 @@
                     You’ll still have full access to all of our features making it simple to track registrations, 
                     send updates and check in attendees for any free event, workshop, meetup, party or fundraiser.</p>
                     </div>
+                        <input type="quantity" name='in_currency' value="{{old('in_currency')}}">
+                        <select name="intype_currency">
+                            <option value="dollars">Dollars($)</option>
+                            <option value="pounds">Pound sterling(£)</option>
+                            <option value="euro">Euro(€)</option>
+                        </select>
+
+                        <textarea name='out_currency'></textarea>
+                        <select name="outtype_currency">
+                            <option value="dollars">Dollars($)</option>
+                            <option value="pounds">Pound sterling(£)</option>
+                            <option value="euro">Euro(€)</option>
+                        </select>
+                        <button class="button">Submit</button>
                 </div>
             </div>
         </div>

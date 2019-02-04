@@ -17,14 +17,19 @@
                                         {{ session()->get('message') }}
                                     </div>
                                 @endif
+                                @if(Auth::user() == !null && Auth::user()->SubStatus == false)
                                 <h3>@lang('messages.apply_news')</h3><br>
                                 <div style="text-align: center">
                                 {!! Form::open(['route' => ['send.email']]) !!}
                                 <button class="button" style="background-color: #3e9a1e">@lang('messages.apply')</button>
                                 {!! Form::close() !!}
+                                @elseif(Auth::user() == !null && Auth::user()->SubStatus == true)
                                 {!! Form::open(['route' => ['unsend.email']]) !!}
                                 <button class="button" style="background-color: #f32d2d;">@lang('messages.unapply')</button>
                                 {!! Form::close() !!}
+                                @else
+                                <h3>@lang('messages.apply_news')<a href = "{{ route('register') }}">@lang('messages.register')</a><h3>
+                                @endif
                                 </div>
                             </div>
                             <div class="kontakti">

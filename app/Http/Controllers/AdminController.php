@@ -13,6 +13,9 @@ public function index(){
     return view('admin',['users' => $users]);
 }
 public function assignroles(Request $request){
+        if($request['role_user'] && $request['role_admin']){
+            return redirect()->back()->withErrors('User may have only one role');
+        }
         $user = User::where('email', $request['email'])->first();
         $user->roles()->detach();
        if ($request['role_user']){

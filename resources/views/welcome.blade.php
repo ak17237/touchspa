@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all"> <!-- pieslēdz css failu -->
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <link rel="stylesheet" href="{{ asset('css/welcomestyle.css') }}">
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="{{ URL::asset('assets/js/calculate.js') }}"></script>
                 <style>
                     div.nav a.dashboard {margin-left: 150px}
                     div.nav a.avatar {margin-left: 338px;}

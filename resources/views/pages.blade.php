@@ -10,6 +10,8 @@
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <link rel="stylesheet" href="{{ asset('css/pagesstyle.css') }}">
                 <link rel="stylesheet" href="{{ asset('css/table.css') }}">
+                <script src="{{ asset('js/jquery.min.js') }}"></script>
+                <script type="text/javascript" src="{{ asset('js/calculate.js') }}"></script>
                 
     </head>
     <body>

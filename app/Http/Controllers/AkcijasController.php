@@ -23,7 +23,7 @@ public function ierakstīt(izveidotAkcijasRequest $request){
 //      $akcija = new Akcija();
 //      $akcija->fill($request->all());
 //      $akcija->save();
-      Mail::send(new Mailing());
+      //Mail::send(new Mailing());
     return redirect()->route('akcija');
 
 //    $akcija = new Akcija; 

@@ -17,7 +17,10 @@ public function index(){
     else $outtype = 'dollars';
     if(\Session::has('in')) $in = \Session::get('in');
     else $in = '';
-    return view('admin',compact('users','result','intype','outtype','in')); /* kods lai mainīgie strādātu uz html lapas admin */
+    if (\Session::has('pos'))
+    return redirect('/home/adminpanel#currency')->with(compact('users','result','intype','outtype','in'));
+    else 
+    return view('admin',compact('users','result','intype','outtype','in')); /* kods lai mainīgie strādātu uz html lapas admin */ 
 }
 public function assignroles(Request $request){
         if($request['role_user'] && $request['role_admin']){
@@ -38,8 +41,9 @@ public function assignroles(Request $request){
         if(empty($request['in_currency'])){ /* ja nav ievadīti dati tad rezultāta laukā tiek attēlots Nothing added */
 /* lauks kuram ir vārds in_currency tiek pārbadīts uz tukšumu */
             $result = "Nothing added";
-            return redirect()->back()->with('result',$result)->with('intype',$request['intype_currency'])
-->with('outtype',$request['outtype_currency'])->with('in',$request['in_currency']); // izvadīti sessijas mainīgie ar vērtībām
+            $pos = true;
+return redirect()->back()->with('result',$result)->with('intype',$request['intype_currency'])
+->with('outtype',$request['outtype_currency'])->with('in',$request['in_currency'])->with('pos',$pos); // izvadīti sessijas mainīgie ar vērtībām
 
         }
         if ($request['intype_currency'] == 'dollars'){
@@ -135,8 +139,8 @@ public function assignroles(Request $request){
                 }
         }
         $result = number_format((float)$result, 2, '.', ''); // apaļošana rezultātam līdz 2 cipariem aiz komata
-        
+        $pos = true;
 return redirect()->back()->with('result',$result)->with('intype',$request['intype_currency'])
-->with('outtype',$request['outtype_currency'])->with('in',$request['in_currency']);
+->with('outtype',$request['outtype_currency'])->with('in',$request['in_currency'])->with('pos',$pos);
         }
 }

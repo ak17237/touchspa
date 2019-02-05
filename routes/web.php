@@ -70,7 +70,12 @@ Route::post('/home/adminpanel/assign-roles', [
     'middleware' => 'roles',
     'roles' => ['Admin']
     ]);
-
+Route::post('/home/adminpanel/calculate', [
+        'uses' => 'AdminController@calculate',
+        'as' => 'admin.calculate',
+        'middleware' => 'roles',
+        'roles' => ['Admin']
+        ]);
 Route::get('lang/{locale}','LenguageController');
 
 Route::post('send',[

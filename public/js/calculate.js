@@ -1,24 +1,27 @@
 jQuery('document').ready(function(){
     
-    if($("#type").val() == "yesfees")jQuery('#fevent').hide();
-    var sf,cc,result;
-    function numberWithCommas(x) {
+    if($("#type").val() == "yesfees")jQuery('#fevent').hide(); // pēc noklusējuma  šīs lauks ir paslēpts
+    var sf,cc,result; // sf komisijas maksa 2.9 jeb 1.4 | cc kurss | result lai izvadīdu pareizus ciparus uz select maiņas
+    function numberWithCommas(x) { // funkcijas ciparu tūkstoš formātam 1,000
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    function calculate(s,c){
+    function calculate(s,ccc){ // funkcija kura saskaita visas vērtības
 
         var a = $('#quan').val() * $('#amount').val();
         var b,c,d,f;
         a = parseInt(a);
         jQuery('.gross').html(numberWithCommas(a));
         b = a * 0.03;
-        jQuery('.ticket-fee').html(numberWithCommas(b.toFixed(0)));
-        c = a * (s/100) + (0.25 * c);
+        if($('#amount').val() < 833 * ccc)
+        jQuery('.ticket-fee').html(numberWithCommas(b.toFixed(2)));
+        else { b = 25 * ccc * $('#quan').val(); jQuery('.ticket-fee').html(numberWithCommas(b.toFixed(2))); }
+        c = a * (s/100) + (0.25 * ccc);
         jQuery('.stripe-total').html(numberWithCommas(c.toFixed(2)));
         d = b + c;
         jQuery('.estimated-fees').html(numberWithCommas(d.toFixed(2)));
         f = a - d;
-        jQuery('.estimated-total').html(numberWithCommas(f.toFixed(2)));
+        if(f < 0) jQuery('.estimated-total').html(0);
+        else jQuery('.estimated-total').html(numberWithCommas(f.toFixed(2)));
     }
     
 
@@ -114,6 +117,5 @@ jQuery('.money').change(function(){
     calculate(sf,cc);
 
   });
-
 
 });

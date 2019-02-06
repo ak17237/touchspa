@@ -68,9 +68,9 @@
                     </div>
                     {!! Form::open(['route' => ['admin.calculate']]) !!}<!--  forma kuras dati tiek aizsūtīti uz kontolieri -->
                         <input type="text" name='in_currency' id='currency' value="{{ $in }}"> <!-- value ir vērtība kura būs pēc noklusējuma -->
-                        {{ Form::select('intype_currency', ['dollars' => 'Dollars($)', 'pounds' => 'Pound sterling(£)', 'euro' => 'Euro(€)','rub' => 'Ruble(₽)'], $intype) }} 
+                        {{ Form::select('intype_currency', ['USD' => 'Dollars($)', 'GBP' => 'Pound sterling(£)', 'EUR' => 'Euro(€)','RUB' => 'Ruble(₽)'], $intype) }} 
                         <textarea name='out_currency'>{{ $result }}</textarea> <!-- rezultāts ir mainīgais no kontoliera -->
-                        {{ Form::select('outtype_currency', ['dollars' => 'Dollars($)', 'pounds' => 'Pound sterling(£)', 'euro' => 'Euro(€)','rub' => 'Ruble(₽)'], $outtype) }}
+                        {{ Form::select('outtype_currency', ['USD' => 'Dollars($)', 'GBP' => 'Pound sterling(£)', 'EUR' => 'Euro(€)','RUB' => 'Ruble(₽)'], $outtype) }}
 <!-- forma select ir tas pats kas html sintakse select, kur sākumā ir select name="",pēc tam option value un kā viņi tiek uzrakstīti uz lapas un, defaultās vērtības kad lapa ielādējas -->
                         <button class="button">Submit</button>
                     {!! Form::close() !!}
